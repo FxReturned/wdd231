@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="W01 Course Home Page" />
+  <meta name="author" content="Cesar Cordova Iturbe" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Home | WDD 231</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="profile-section">
+      <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1 class="site-title">Cesar <span>Cordova Iturbe</span></h1>
+    </div>
+
+    <button id="menuBtn" class="menu-btn" aria-label="Menu Button">
+      &#9776;
+    </button>
+
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">GitHub Profile</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-heading">
+    <h2>Home</h2>
+  </div>
+
+  <main>
+    <div class="top-sections">
+      <section class="section-left">
+        <h2>Course Work</h2>
+        <p>Below is a dynamic list of courses using JavaScript.</p>
+        <ul>
+          <li>Review basic HTML &amp; CSS concepts</li>
+          <li>Practice JavaScript DOM manipulation</li>
+          <li>Apply responsive design techniques</li>
+        </ul>
+      </section>
+      <section class="section-right">
+        <h2>Trujillo, Peru</h2>
+        <figure>
+          <img
+            src="images/caballitos.jpg"
+            alt="Caballitos de totora"
+            class="responsive-img"
+          />
+          <figcaption>Caballitos de Totora</figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <section class="certificate-section">
+      <h2>Web and Computer Programming Certificate</h2>
+
+      <div class="filters">
+        <button id="allBtn">All</button>
+        <button id="cseBtn">CSE</button>
+        <button id="wddBtn">WDD</button>
+      </div>
+
+      <div id="coursesContainer" class="courses-container"></div>
+
+      <p class="total-credits">
+        Total Credits: <span id="totalCredits">0</span>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentYear"></span> Cesar Cordova Iturbe • Trujillo - Peru
+    </p>
+    <p id="lastModified">Last Update:</p>
+  </footer>
+</body>
+</html>
