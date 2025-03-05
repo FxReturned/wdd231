@@ -31,7 +31,7 @@
     padding: 0.5rem 1rem;
   }
 
-  .full-width-heading {
+  main > h1 {
     background-color: var(--color-mid);
     color: var(--color-white);
     text-align: center;
